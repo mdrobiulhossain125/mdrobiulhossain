@@ -1,0 +1,3 @@
+- [ ] Recreate the reference site's visual layout and navigation for Md. Robiul Hossain.
+- [ ] Populate home, research, teaching, projects, and printable CV with verified supplied details.
+- [ ] Verify desktop and mobile navigation and rendering.
