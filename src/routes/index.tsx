@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteShell } from "@/components/site-shell";
 import { person } from "@/lib/profile";
+import portrait from "@/assets/robiul-portrait.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
