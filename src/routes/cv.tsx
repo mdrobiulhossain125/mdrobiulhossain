@@ -1,0 +1,31 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { Printer } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { SiteShell } from "@/components/site-shell";
+import { experience, inPreparation, person, underReview } from "@/lib/profile";
+
+export const Route = createFileRoute("/cv")({
+  head: () => ({ meta: [
+    { title: "Academic CV | Md. Robiul Hossain" }, { name: "description", content: "Academic CV of Md. Robiul Hossain: education, research, teaching, skills and awards." },
+    { property: "og:title", content: "Academic CV | Md. Robiul Hossain" }, { property: "og:description", content: "Education, research, teaching, skills and awards of Md. Robiul Hossain." },
+    { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" },
+  ] }), component: CV,
+});
+function CV() {
+  return <SiteShell>
+    <div className="cv-actions"><Button variant="outline" onClick={() => window.print()}><Printer /> Print / Save PDF</Button></div>
+    <h1 className="page-title">{person.name}</h1>
+    <div className="content-section"><h2>Contact Information</h2><p>{person.location} · {person.phone}</p><div className="contact-list"><a href={`mailto:${person.email}`}>{person.email}</a><a href={person.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a><a href={person.researchGate} target="_blank" rel="noopener noreferrer">ResearchGate</a></div></div>
+    <div className="content-section"><h2>Education</h2><article className="entry dated-entry"><span className="entry-date">2026</span><div><span className="entry-title">Bachelor of Social Sciences (Honours) in Economics</span><p>University of Chittagong, Bangladesh · Four-year undergraduate programme</p><p><strong>Selected coursework:</strong> Microeconomic Theory I–II; Macroeconomic Theory I–II; Mathematics for Economists; Statistics for Economists I–II; Econometrics.</p></div></article></div>
+    <div className="content-section"><h2>Research Interests</h2><p>Development and behavioural economics, child development, education, household decision-making, labour market outcomes, entrepreneurship, fisheries and climate-resilient livelihoods.</p></div>
+    <div className="content-section"><h2>Research Experience</h2>{experience.map((item) => <article className="entry dated-entry" key={item.title}><span className="entry-date">{item.period}</span><div><span className="entry-title">{item.title}</span><p className="entry-meta">{item.affiliation}</p><p>{item.detail}</p></div></article>)}</div>
+    <div className="content-section"><h2>Manuscripts under review</h2>{underReview.map((item) => <article className="entry" key={item.title}><span className="entry-title">{item.title}</span><p>{item.authors}. <em>{item.venue}.</em></p></article>)}</div>
+    <div className="content-section"><h2>Manuscripts in preparation</h2>{inPreparation.map((item) => <article className="entry" key={item.title}><span className="entry-title">{item.title}</span><p>{item.authors}.</p></article>)}</div>
+    <div className="content-section"><h2>Conference Contributions</h2><ul className="plain-list"><li>“Unintended Spillovers: School Bans, Home Punishment, and Child Emotional Development.” Paper presented online at the Fifth Annual International Conference: A New Global Order, Yet Again, Karachi, 14 November 2025.</li><li>“Gender Heterogeneity in the Impact of Violent Discipline on Foundational Reading Skills.” Abstract accepted for online presentation at the 4th International C.I.T.E.D Conference, Indonesia, 27–28 October 2026. Forthcoming presentation.</li></ul></div>
+    <div className="cv-columns"><div className="content-section"><h2>Research &amp; Technical Skills</h2><ul className="plain-list"><li><strong>Research:</strong> Surveys, interviews, data cleaning, statistical analysis and academic writing.</li><li><strong>Methods:</strong> Firth logistic regression; time-series econometrics (ongoing).</li><li><strong>Software:</strong> Stata, R, IBM SPSS, basic Python, QGIS.</li><li><strong>Writing:</strong> LaTeX, Overleaf, Zotero, Mendeley.</li><li><strong>Languages:</strong> Bengali (native), English (fluent).</li></ul></div><div className="content-section"><h2>Selected Research Training</h2><ul className="plain-list"><li>Introduction to Python, DataCamp (2026)</li><li>Introduction to Statistics in R, DataCamp (2026)</li><li>GIS Development Training, University of Chittagong (2026)</li><li>IBM SPSS Foundation Course (2023)</li><li>Workshop Series on Writing a Scientific Paper (2022)</li></ul></div></div>
+    <div className="content-section"><h2>Teaching &amp; Training</h2><p>Economics and statistics tutoring for B.S.S., SSC and HSC students; training in Stata, Excel, PowerPoint and graphic design; community teaching through Nogorful (2021–2025).</p></div>
+    <div className="content-section"><h2>Selected Awards</h2><article className="entry dated-entry"><span className="entry-date">2026</span><div><span className="entry-title">Generation Hope Goals 2.0 — Regional Finalist</span><p>Team award of US$5,000; selected among 1,400+ applicants at the Asia-Pacific Forum on Sustainable Development, Bangkok.</p></div></article><article className="entry dated-entry"><span className="entry-date">2025</span><div><span className="entry-title">3Zero Club Ideation — Champion</span><p>Team award of US$500 for a zero-poverty, zero-emission solution; selected among 350+ projects in Bangladesh.</p></div></article></div>
+    <div className="content-section"><h2>Academic Leadership &amp; Service</h2><p><strong>Chittagong University Research and Higher Study Society:</strong> Vice President (2025–2026); Organising Secretary (2024–2025). <strong>Young Economists’ Society:</strong> Organising Secretary (2025–2026); Joint Organising Secretary (2024–2025).</p></div>
+    <div className="content-section"><h2>Academic References</h2><div className="cv-columns"><p><strong>Dr. Md. Alauddin Majumder</strong><br />Professor of Economics, University of Chittagong<br /><a href="mailto:ecoalauddin@cu.ac.bd">ecoalauddin@cu.ac.bd</a></p><p><strong>Md. Johirul Islam</strong><br />Research Assistant, Southern Illinois University Carbondale<br /><a href="mailto:mdjohirul.islam@siu.edu">mdjohirul.islam@siu.edu</a></p></div></div>
+  </SiteShell>;
+}
