@@ -76,7 +76,7 @@ export function SiteShell({ children, network = false }: { children: React.React
       <header className="site-header">
         <nav className="site-nav" aria-label="Main navigation">
           <Link to="/" className="site-brand">{person.name}</Link>
-          <Button variant="ghost" size="icon" className="menu-button" aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</Button>
+          <Button variant="ghost" size="icon" className="hidden max-[740px]:inline-flex max-[740px]:text-primary" aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</Button>
           <div className="site-links" data-open={menuOpen}>
             {links.map(({ to, label }) => <Link key={to} to={to} aria-current={pathname === to ? "page" : undefined}>{label}</Link>)}
           </div>

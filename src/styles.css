@@ -64,7 +64,6 @@
   .site-links { display: flex; align-items: center; gap: 10px; }
   .site-links a { color: var(--muted-foreground); padding: 5px 10px; font-size: 1rem; white-space: nowrap; border-bottom: 2px solid transparent; }
   .site-links a:hover, .site-links a[aria-current="page"] { color: var(--primary); border-bottom-color: var(--accent); font-weight: 700; }
-  .site-nav .menu-button { display: none; }
   .site-main { flex: 1; position: relative; }
   .page-section { position: relative; padding: 40px 0 65px; animation: rise-in .5s ease both; }
   .network-layer { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
@@ -106,7 +105,6 @@
   @keyframes rise-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
   @media (max-width: 740px) {
     .site-nav { min-height: 59px; padding: 12px 20px; flex-wrap: wrap; }
-    .site-nav .menu-button { display: inline-flex; color: var(--primary); }
     .site-links { display: none; flex: 0 0 100%; flex-direction: column; align-items: stretch; gap: 0; padding: 4px 0 8px; }
     .site-links[data-open="true"] { display: flex; }
     .site-links a { padding: 10px 0; }
