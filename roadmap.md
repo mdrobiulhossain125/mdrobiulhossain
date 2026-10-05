@@ -1,3 +1,4 @@
 - [x] Recreate the reference site's visual layout and navigation for Md. Robiul Hossain.
 - [x] Populate home, research, teaching, projects, and printable CV with verified supplied details.
 - [x] Verify desktop and mobile navigation and rendering.
+- [x] Use the supplied portrait photo as the home page profile picture.
