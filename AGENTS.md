@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep academic profile content in a shared data module and render it through TanStack routes; this avoids conflicting facts across pages.
+- Provide the CV as a print-friendly web route rather than an invented PDF; the uploaded source is LaTeX text, not a finished PDF.
