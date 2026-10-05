@@ -11,3 +11,4 @@
 
 - Keep academic profile content in a shared data module and render it through TanStack routes; this avoids conflicting facts across pages.
 - Provide the CV as a print-friendly web route rather than an invented PDF; the uploaded source is LaTeX text, not a finished PDF.
+- Serve uploaded photos and other media through a CDN asset pointer (src/assets/*.asset.json) instead of committing the binary; keeps the repository light and the URL stable.
