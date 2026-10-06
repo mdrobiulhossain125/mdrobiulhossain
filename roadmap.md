@@ -2,5 +2,5 @@
 - [x] Populate home, research, teaching, projects, and printable CV with verified supplied details.
 - [x] Verify desktop and mobile navigation and rendering.
 - [x] Use the supplied portrait photo as the home page profile picture.
-- [ ] Add supplied project descriptions, links and images in the requested order with a consistent minimal layout.
-- [ ] Verify project images, order and links in the updated page.
+- [x] Add supplied project descriptions, links and images in the requested order with a consistent minimal layout.
+- [x] Verify project images, order and links in the updated page.
