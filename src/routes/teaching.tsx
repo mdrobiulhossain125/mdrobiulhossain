@@ -12,6 +12,6 @@ function Teaching() {
   return <SiteShell><h1 className="page-title">Teaching</h1>
     <div className="content-section"><h2>Economics &amp; statistics tutoring</h2><p>Mentored B.S.S. students in microeconomics, macroeconomics and statistics, and tutored SSC and HSC students in economics and statistics.</p></div>
     <div className="content-section"><h2>Training instruction</h2><p>Taught Stata, Excel, PowerPoint and graphic design. Delivered leadership and teamwork workshops for members of the Chittagong University Research and Higher Study Society and Young Economists’ Society.</p></div>
-    <div className="content-section"><h2>Community teaching</h2><p>Taught underprivileged children through Nogorful from February 2021 to May 2025.</p></div>
+    <div className="content-section"><h2>Community teaching</h2><p>Through Nogorful, I teach underprivileged children every Friday through the Holiday School Project and contribute to periodic health check-ups organized every few months to support their overall well-being. <a className="text-link" href="https://nogorful.org/" target="_blank" rel="noopener noreferrer">nogorful.org</a></p></div>
   </SiteShell>;
 }
