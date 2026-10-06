@@ -103,6 +103,15 @@
   .contact-list a { text-decoration: underline; text-underline-offset: 3px; }
   .cv-actions { display: flex; justify-content: flex-end; margin-bottom: 10px; }
   .cv-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .project-entry { padding: 12px 0 32px; margin-bottom: 32px; border-bottom: 1px solid var(--border); }
+  .project-entry:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+  .project-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 16px; }
+  .project-heading h3 { font-size: 1.25rem; margin: 0; }
+  .project-heading .entry-date { flex-shrink: 0; }
+  .project-image { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: var(--muted); border-radius: 4px; margin-bottom: 20px; }
+  .project-description p { margin: 0 0 14px; }
+  .project-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); font-size: .95rem; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+  .project-link:focus-visible { outline: 2px solid var(--ring); outline-offset: 5px; }
   @keyframes rise-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
   @media (max-width: 740px) {
     .site-nav { min-height: 59px; padding: 12px 20px; flex-wrap: wrap; }
