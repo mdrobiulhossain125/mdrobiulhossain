@@ -7,7 +7,7 @@ import { person } from "@/lib/profile";
 const links = [
   { to: "/", label: "Home" },
   { to: "/research", label: "Research" },
-  { to: "/teaching", label: "Teaching" },
+  { to: "/research-experience", label: "Experience" },
   { to: "/projects", label: "Projects" },
   { to: "/cv", label: "CV" },
 ] as const;
