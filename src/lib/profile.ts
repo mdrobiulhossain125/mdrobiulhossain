@@ -17,7 +17,6 @@ export const person = {
 export const experience = [
   { period: "Jan 2025 – Jul 2026", title: "Research Assistant — Child Development, Education and Migration", affiliation: "Under Md. Johirul Islam, formerly at BIGD, BRAC University", detail: "Supported research on child development, education, early marriage, corporal punishment and Rohingya refugee communities through fieldwork, survey implementation, data cleaning, statistical analysis and manuscript preparation." },
   { period: "Feb – Jun 2026", title: "Research Assistant — Fisheries and the Blue Economy", affiliation: "Bay of Bengal region · Advisor: Dr. Shyam S. Salim", detail: "Collected and managed field data and conducted statistical analysis for research on fisheries management and sustainable blue economy development." },
-  { period: "Jul 2024 – Jul 2025", title: "Research Assistant — Rohingya Refugee and Host-Community Research", affiliation: "Under Md. Johirul Islam, BIGD, BRAC University", detail: "Conducted surveys and primary data collection, coordinated fieldwork, cleaned survey data and contributed to analysis of educational and psychosocial outcomes." },
   { period: "Jan – Sep 2024", title: "Research Assistant — Graduate Labour Market Study", affiliation: "Under Dr. Md. Alauddin Majumder, University of Chittagong", detail: "Surveyed and interviewed employed graduates and entrepreneurs, verified data and supported preliminary analysis of graduate labour market outcomes." },
 ];
 
