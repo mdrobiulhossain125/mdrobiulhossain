@@ -11,6 +11,8 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CvRouteImport } from './routes/cv'
+import { Route as InterestsRouteImport } from './routes/interests'
+import { Route as LeadershipRouteImport } from './routes/leadership'
 import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as ResearchRouteImport } from './routes/research'
 import { Route as ResearchExperienceRouteImport } from './routes/research-experience'
@@ -24,6 +26,16 @@ const IndexRoute = IndexRouteImport.update({
 const CvRoute = CvRouteImport.update({
   id: '/cv',
   path: '/cv',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InterestsRoute = InterestsRouteImport.update({
+  id: '/interests',
+  path: '/interests',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LeadershipRoute = LeadershipRouteImport.update({
+  id: '/leadership',
+  path: '/leadership',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProjectsRoute = ProjectsRouteImport.update({
@@ -50,6 +62,8 @@ const TeachingRoute = TeachingRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/cv': typeof CvRoute
+  '/interests': typeof InterestsRoute
+  '/leadership': typeof LeadershipRoute
   '/projects': typeof ProjectsRoute
   '/research': typeof ResearchRoute
   '/research-experience': typeof ResearchExperienceRoute
@@ -58,6 +72,8 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/cv': typeof CvRoute
+  '/interests': typeof InterestsRoute
+  '/leadership': typeof LeadershipRoute
   '/projects': typeof ProjectsRoute
   '/research': typeof ResearchRoute
   '/research-experience': typeof ResearchExperienceRoute
@@ -67,6 +83,8 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/cv': typeof CvRoute
+  '/interests': typeof InterestsRoute
+  '/leadership': typeof LeadershipRoute
   '/projects': typeof ProjectsRoute
   '/research': typeof ResearchRoute
   '/research-experience': typeof ResearchExperienceRoute
@@ -77,6 +95,8 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/cv'
+    | '/interests'
+    | '/leadership'
     | '/projects'
     | '/research'
     | '/research-experience'
@@ -85,6 +105,8 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/cv'
+    | '/interests'
+    | '/leadership'
     | '/projects'
     | '/research'
     | '/research-experience'
@@ -93,6 +115,8 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/cv'
+    | '/interests'
+    | '/leadership'
     | '/projects'
     | '/research'
     | '/research-experience'
@@ -102,6 +126,8 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CvRoute: typeof CvRoute
+  InterestsRoute: typeof InterestsRoute
+  LeadershipRoute: typeof LeadershipRoute
   ProjectsRoute: typeof ProjectsRoute
   ResearchRoute: typeof ResearchRoute
   ResearchExperienceRoute: typeof ResearchExperienceRoute
@@ -122,6 +148,20 @@ declare module '@tanstack/react-router' {
       path: '/cv'
       fullPath: '/cv'
       preLoaderRoute: typeof CvRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/interests': {
+      id: '/interests'
+      path: '/interests'
+      fullPath: '/interests'
+      preLoaderRoute: typeof InterestsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/leadership': {
+      id: '/leadership'
+      path: '/leadership'
+      fullPath: '/leadership'
+      preLoaderRoute: typeof LeadershipRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/projects': {
@@ -158,6 +198,8 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CvRoute: CvRoute,
+  InterestsRoute: InterestsRoute,
+  LeadershipRoute: LeadershipRoute,
   ProjectsRoute: ProjectsRoute,
   ResearchRoute: ResearchRoute,
   ResearchExperienceRoute: ResearchExperienceRoute,
