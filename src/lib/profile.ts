@@ -14,8 +14,32 @@ export const person = {
   researchGate: "https://www.researchgate.net/profile/Md-Robiul-Hossain-3",
 };
 
-export const experience = [
-  { period: "Jan 2025 – Jul 2026", title: "Research Assistant — Child Development, Education and Migration", affiliation: "Under Md. Johirul Islam, formerly at BIGD, BRAC University", detail: "Supported research on child development, education, early marriage, corporal punishment and Rohingya refugee communities through fieldwork, survey implementation, data cleaning, statistical analysis and manuscript preparation." },
+export type ExperienceItem = {
+  period: string;
+  title: string;
+  affiliation: string;
+  detail: string;
+  paragraphs?: string[];
+  publication?: { citation: string; description: string };
+  closing?: string;
+};
+
+export const experience: ExperienceItem[] = [
+  {
+    period: "Jan 2025 – Jul 2026",
+    title: "Research Assistant — Child Development & Education",
+    affiliation: "Under the supervision of Md. Johirul Islam, Senior Research Associate, BRAC Institute of Governance and Development (BIGD), BRAC University",
+    detail: "Contributed to research on child development, education and family practices through field data collection, survey implementation, data cleaning, statistical analysis and academic research writing; contributed to the paper “Unintended Spillovers: School Bans, Home Punishment, and Child Emotional Development.”",
+    paragraphs: [
+      "Worked under the supervision of Md. Johirul Islam, Senior Research Associate, BRAC Institute of Governance and Development (BIGD), BRAC University, contributing to research on child development, education, and family practices.",
+      "Key responsibilities included field data collection, survey implementation, data management, data cleaning, verification, statistical analysis, and academic research writing. Contributed to organizing and analyzing quantitative data and supporting the preparation of research outputs on children's educational experiences, emotional development, and family environments.",
+    ],
+    publication: {
+      citation: "Islam, M. J., Iqra, A. N., & Hossain, M. R. (2026). “Unintended Spillovers: School Bans, Home Punishment, and Child Emotional Development.”",
+      description: "The study examines the unintended effects of school-related restrictions on children's emotional development, with particular attention to emotional regulation, anxiety, depression, and parental disciplinary practices. Contributed to data-related activities, empirical analysis, interpretation of findings, and academic paper preparation.",
+    },
+    closing: "Also participated in a research conference related to the study, gaining experience in presenting and communicating empirical research findings to an academic audience.",
+  },
   { period: "Feb – Jun 2026", title: "Research Assistant — Fisheries and the Blue Economy", affiliation: "Bay of Bengal region · Advisor: Dr. Shyam S. Salim", detail: "Collected and managed field data and conducted statistical analysis for research on fisheries management and sustainable blue economy development." },
   { period: "Jan – Sep 2024", title: "Research Assistant — Graduate Labour Market Study", affiliation: "Under Dr. Md. Alauddin Majumder, University of Chittagong", detail: "Surveyed and interviewed employed graduates and entrepreneurs, verified data and supported preliminary analysis of graduate labour market outcomes." },
 ];
