@@ -97,6 +97,9 @@
   .entry p { margin: 0; }
   .dated-entry { display: grid; grid-template-columns: 145px 1fr; gap: 18px; }
   .entry-date { font-size: .9rem; color: var(--muted-foreground); }
+  .publication-block { border-left: 3px solid var(--primary); padding: 4px 0 4px 16px; margin: 12px 0; }
+  .publication-block p { margin: 0 0 8px; }
+  .publication-block p:last-child { margin-bottom: 0; }
   .plain-list { padding-left: 24px; margin: 0; }
   .plain-list li { margin-bottom: 9px; }
   .contact-list { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 15px 0; }
