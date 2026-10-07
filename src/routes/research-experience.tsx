@@ -11,6 +11,24 @@ export const Route = createFileRoute("/research-experience")({
 });
 function ResearchExperience() {
   return <SiteShell><h1 className="page-title">Research Experience</h1>
-    <div className="content-section">{experience.map((item) => <article className="entry dated-entry" key={item.title}><span className="entry-date">{item.period}</span><div><span className="entry-title">{item.title}</span><p className="entry-meta">{item.affiliation}</p><p>{item.detail}</p></div></article>)}</div>
+    <div className="content-section">{experience.map((item) => (
+      <article className="entry dated-entry" key={item.title}>
+        <span className="entry-date">{item.period}</span>
+        <div>
+          <span className="entry-title">{item.title}</span>
+          <p className="entry-meta">{item.affiliation}</p>
+          {item.paragraphs
+            ? item.paragraphs.map((p) => <p key={p.slice(0, 24)}>{p}</p>)
+            : <p>{item.detail}</p>}
+          {item.publication && (
+            <div className="publication-block">
+              <p><em>{item.publication.citation}</em></p>
+              <p>{item.publication.description}</p>
+            </div>
+          )}
+          {item.closing && <p>{item.closing}</p>}
+        </div>
+      </article>
+    ))}</div>
   </SiteShell>;
 }
