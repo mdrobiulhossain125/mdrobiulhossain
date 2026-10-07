@@ -88,3 +88,199 @@ export const projects = [
     url: "https://ecosentinelsbd.org/plastic-4-perks/", image: plasticImage.url, imageAlt: "A field discussion with community members for Plastic 4 Perks.",
   },
 ];
+
+export type LeadershipOrg = {
+  name: string;
+  period: string;
+  roles: string[];
+  description?: string;
+  contributions?: string[];
+  highlights?: string;
+  url?: string;
+  linkLabel?: string;
+};
+
+export const leadership: LeadershipOrg[] = [
+  {
+    name: "Chittagong University Research and Higher Study Society (CURHS)",
+    period: "Feb 2022 – Sep 2026",
+    roles: ["Vice President — Jan 2025 – Sep 2026", "Organising Secretary — Jan 2024 – Jan 2025", "General Member — Feb 2022"],
+    description: "CURHS is a research and higher-study focused student organization at the University of Chittagong that promotes undergraduate research, academic development, research skills, and opportunities for higher education.",
+    contributions: [
+      "Led and coordinated student-focused research and higher-study initiatives.",
+      "Supported the planning and execution of academic and research events.",
+      "Coordinated volunteers, organizers, speakers, and participants.",
+      "Contributed to research-oriented workshops, seminars, conferences, and student development programs.",
+      "Worked to promote research culture and higher-study opportunities among university students.",
+    ],
+    url: "https://curhs.org/", linkLabel: "curhs.org",
+  },
+  {
+    name: "Young Economists' Society (YES), University of Chittagong",
+    period: "Jun 2022 – Oct 2026",
+    roles: ["Organising Secretary — Mar 2025 – Mar 2026", "Joint Organizing Secretary — May 2024 – Feb 2025", "Executive Member — Feb 2022 – Apr 2024"],
+    description: "YES is a student-led organization of the Department of Economics, University of Chittagong, dedicated to creating opportunities for students interested in economics, academic development, and professional growth.",
+    contributions: [
+      "Coordinated academic and student-development activities.",
+      "Assisted in organizing economics-related seminars, events, and initiatives.",
+      "Worked with executive members and volunteers in event planning and execution.",
+      "Contributed to creating an engaging academic environment for Economics students.",
+    ],
+    url: "https://www.facebook.com/yes.eco.cu", linkLabel: "Facebook page",
+  },
+  {
+    name: "Eco Sentinels Bangladesh",
+    period: "Director of Content Strategy",
+    roles: [],
+    description: "Eco Sentinels is a youth-led environmental initiative dedicated to sustainable solutions, climate resilience, environmental conservation, and community empowerment. The organization focuses on turning innovative environmental ideas into practical, community-level action.",
+    contributions: [
+      "Contributed to the design and development of environmental and community-focused projects, transforming ideas into practical project concepts.",
+      "Worked with the team to develop project implementation strategies, action plans, timelines, and execution frameworks.",
+      "Participated in taking projects from the planning stage to real-world field implementation.",
+      "Coordinated project activities and supported the execution of initiatives at the community level.",
+      "Developed and managed content and communication strategies to effectively present project objectives, activities, and outcomes.",
+      "Contributed to creating awareness and educational materials around environmental sustainability, climate resilience, and community empowerment.",
+      "Worked collaboratively with team members to identify local challenges and develop practical, sustainable solutions.",
+      "Gained hands-on experience in project design, planning, field execution, teamwork, communication, and community engagement.",
+    ],
+    highlights: "Project Design → Planning → Execution → Field Implementation → Community Impact",
+    url: "https://ecosentinelsbd.org/", linkLabel: "ecosentinelsbd.org",
+  },
+  {
+    name: "Nogorful",
+    period: "Feb 2021 – May 2025",
+    roles: ["Teacher — Teaching Underprivileged Children"],
+    description: "Nogorful is a community-focused organization working to support underprivileged and street-connected children through education, nutrition, healthcare, and child protection.",
+    contributions: [
+      "Taught underprivileged children through community-based educational activities.",
+      "Supported children with basic academic learning and educational guidance.",
+      "Participated in community initiatives focused on children's development and well-being.",
+      "Contributed time and effort toward creating accessible learning opportunities.",
+    ],
+    url: "https://nogorful.org/", linkLabel: "nogorful.org",
+  },
+  {
+    name: "Chittagong University Cyclists",
+    period: "Jan 2022 – Oct 2024",
+    roles: ["Founding Human Resources Secretary"],
+    contributions: [
+      "Contributed to the development of the organization from its early stage.",
+      "Supported member coordination and human-resource activities.",
+      "Assisted in organizing cycling-related activities and community initiatives.",
+      "Promoted cycling, teamwork, and an active student lifestyle.",
+    ],
+  },
+  {
+    name: "Chittagong University Toastmasters Club",
+    period: "Jul 2023 – Jul 2024",
+    roles: ["Member | International Toastmasters"],
+    description: "Participated in a structured public-speaking and communication environment focused on developing confidence, leadership, presentation, and interpersonal communication skills. (Membership ID: PN-67614873)",
+  },
+];
+
+export const leadershipEvents = [
+  { role: "Branding Director", name: "1st TEDxChittagong University", year: "2024", detail: "Contributed to the branding and visual communication of the TEDxChittagong University event, supporting its public identity and promotional activities.", url: "https://www.facebook.com/profile.php?id=61558663688509", linkLabel: "Facebook page" },
+  { role: "Student Organizer", name: "1st National Economics Fest, University of Chittagong", year: "2025", detail: "Supported the coordination and execution of the university's first national-level Economics Fest, working with organizers, participants, and event teams.", url: "https://www.facebook.com/share/p/1H91RyK5iK/", linkLabel: "Facebook post" },
+  { role: "Event Coordinator", name: "Chattogram Research Festival", year: "2025", detail: "Contributed to event coordination for a research-focused festival bringing together students, researchers, and academic communities.", url: "https://researchfest.curhs.org/", linkLabel: "researchfest.curhs.org" },
+  { role: "Officer of Event Management", name: "1st Jamal Nazrul Islam National Conference for Young Researchers", year: "2022", detail: "Supported event-management activities for the inaugural national conference for young researchers, organized in collaboration with the Jamal Nazrul Islam Research Centre and CURHS.", url: "https://jninc.curhs.org/", linkLabel: "jninc.curhs.org" },
+  { role: "Project Coordinator", name: "CURHS Research Month", year: "2022", detail: "Coordinated activities during a research-focused initiative designed to encourage students to engage with research and academic development." },
+  { role: "Team Leader", name: "CURHS Summer Research Internship Program", year: "2023", detail: "Led and coordinated a student team during CURHS's summer research internship initiative, supporting participants throughout the program." },
+];
+
+export const volunteering = [
+  { name: "Flood Rescue & Relief", role: "Volunteer — Feni, Bangladesh", year: "2024", detail: "Participated in flood-response activities, including relief collection, coordination, and distribution support for affected communities in Feni." },
+  { name: "COVID-19 Vaccination Program", role: "Volunteer — Bangladesh Red Crescent Society", year: "2019", detail: "Supported the Bangladesh Red Crescent Society's COVID-19 vaccination-related community activities." },
+];
+
+export const sports = {
+  name: "Cricket",
+  team: "Economics-56 Batch Cricket Team, Department of Economics, University of Chittagong",
+  achievement: "3-Time Champions | 2022–2026",
+  detail: "Active member of the Economics-56 Batch Cricket Team, contributing to a team that achieved championship titles across university-level batch competitions. Beyond competition, cricket has strengthened my teamwork, communication, discipline, and leadership skills.",
+};
+
+export const leadershipStatement = [
+  "For me, leadership is not only about holding a position. It is about taking responsibility, working with people, creating opportunities for others, and turning ideas into meaningful action.",
+  "My experiences across research organizations, academic societies, community initiatives, volunteering, and sports have helped me develop a practical understanding of teamwork, communication, coordination, and responsible leadership.",
+];
+
+export type Hobby = {
+  name: string;
+  paragraphs: string[];
+  bullets?: string[];
+  tagline?: string;
+  closing?: string;
+  url?: string;
+  linkLabel?: string;
+};
+
+export const hobbiesIntro = [
+  "Beyond academics, research, and leadership, I enjoy staying active, exploring new places, and connecting with people through sports and travel.",
+  "These interests give me a balance between academic life and the world outside the classroom.",
+];
+
+export const hobbies: Hobby[] = [
+  {
+    name: "Cycling",
+    paragraphs: [
+      "Cycling is one of my favorite ways to stay active and explore my surroundings.",
+      "My interest in cycling also led me to become involved with Chittagong University Cyclists, where I served as the Founding Human Resources Secretary.",
+      "For me, cycling represents freedom, exploration, fitness, and community.",
+    ],
+  },
+  {
+    name: "Cricket",
+    paragraphs: [
+      "Cricket has been a major part of my university life.",
+      "I have played for the Economics-56 Batch Cricket Team, Department of Economics, University of Chittagong, which became 3-time champions between 2022 and 2026.",
+      "Cricket has taught me the importance of teamwork, discipline, communication, patience, and performing under pressure.",
+    ],
+  },
+  {
+    name: "Football",
+    paragraphs: [
+      "Football is another sport I enjoy playing in my free time.",
+      "I enjoy the combination of teamwork, strategy, movement, and competition that makes football exciting.",
+      "For me, sports are not only about winning—they are also about building friendships, staying active, and learning how to work effectively as part of a team.",
+    ],
+  },
+  {
+    name: "Hockey",
+    paragraphs: [
+      "Hockey is another sport that I enjoy playing.",
+      "Its fast pace, coordination, and team-oriented nature make it an enjoyable way to stay active and challenge myself outside academic life.",
+    ],
+  },
+  {
+    name: "Travelling",
+    paragraphs: [
+      "Travelling is one of my strongest personal interests.",
+      "I enjoy discovering new places, experiencing different environments, meeting people, trying local experiences, and documenting the journey.",
+      "Travel gives me an opportunity to step outside familiar surroundings and see places from a different perspective.",
+      "I am particularly interested in discovering lesser-known destinations, local stories, everyday life, and the beauty of Bangladesh.",
+    ],
+  },
+  {
+    name: "Next Stop Robi",
+    paragraphs: [
+      "My passion for travelling and documenting everyday experiences inspired me to create Next Stop Robi, my personal travel and lifestyle YouTube channel. Through the channel, I share:",
+    ],
+    bullets: [
+      "Travel experiences",
+      "New places and destinations",
+      "Local discoveries",
+      "Everyday life and experiences",
+      "Underrated places",
+      "Personal travel stories",
+      "Exploring Bangladesh from my own perspective",
+    ],
+    tagline: "Travel · Explore · Experience · Share",
+    closing: "If you enjoy discovering new places and seeing Bangladesh from a different perspective, follow my journey on YouTube.",
+    url: "https://www.youtube.com/@Next_Stop_Robi", linkLabel: "Visit Next Stop Robi on YouTube",
+  },
+];
+
+export const hobbiesClosing = [
+  "Research and academics shape my intellectual journey, while sports, cycling, and travelling keep me connected to people, places, and experiences.",
+  "I believe these experiences complement my academic life by helping me remain curious, active, adaptable, and open to new perspectives.",
+];
