@@ -4,7 +4,7 @@
 - [x] Use the supplied portrait photo as the home page profile picture.
 - [x] Add supplied project descriptions, links and images in the requested order with a consistent minimal layout.
 - [x] Verify project images, order and links in the updated page.
-- [ ] Replace the child-development research assistant entry with the supplied detailed description.
-- [ ] Create a Leadership Experience page with the supplied organizations, events, volunteering and sports content.
-- [ ] Create a Hobbies & Interests page with the supplied content and YouTube link.
-- [ ] Add both pages to the navigation and verify desktop and mobile rendering.
+- [x] Replace the child-development research assistant entry with the supplied detailed description.
+- [x] Create a Leadership Experience page with the supplied organizations, events, volunteering and sports content.
+- [x] Create a Hobbies & Interests page with the supplied content and YouTube link.
+- [x] Add both pages to the navigation and verify desktop and mobile rendering.
