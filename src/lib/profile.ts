@@ -28,7 +28,7 @@ export const experience: ExperienceItem[] = [
   {
     period: "Jan 2025 – Jul 2026",
     title: "Research Assistant — Child Development & Education",
-    affiliation: "Under the supervision of Md. Johirul Islam, Senior Research Associate, BRAC Institute of Governance and Development (BIGD), BRAC University",
+    affiliation: "Advisor: Md. Johirul Islam, Senior Research Associate, BIGD, BRAC University",
     detail: "Contributed to research on child development, education and family practices through field data collection, survey implementation, data cleaning, statistical analysis and academic research writing; contributed to the paper “Unintended Spillovers: School Bans, Home Punishment, and Child Emotional Development.”",
     paragraphs: [
       "Worked under the supervision of Md. Johirul Islam, Senior Research Associate, BRAC Institute of Governance and Development (BIGD), BRAC University, contributing to research on child development, education, and family practices.",
