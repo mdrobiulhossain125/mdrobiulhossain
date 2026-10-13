@@ -14,9 +14,9 @@ export const Route = createFileRoute("/interests")({
 function Interests() {
   return <SiteShell>
     <h1 className="page-title">Hobbies &amp; Interests</h1>
-    <div className="content-section">{hobbiesIntro.map((p) => <p key={p.slice(0, 24)}>{p}</p>)}</div>
+    <div className="content-section lead-copy">{hobbiesIntro.map((p) => <p key={p.slice(0, 24)}>{p}</p>)}</div>
     {hobbies.map((h) => (
-      <div className="content-section" key={h.name}>
+      <div className="content-section interest-card" key={h.name}>
         <h2>{h.name}</h2>
         {h.paragraphs.map((p) => <p key={p.slice(0, 24)}>{p}</p>)}
         {h.bullets && <ul className="plain-list">{h.bullets.map((b) => <li key={b}>{b}</li>)}</ul>}
@@ -25,7 +25,7 @@ function Interests() {
         {h.url && h.linkLabel && <a className="project-link" href={h.url} target="_blank" rel="noopener noreferrer">{h.linkLabel} <ArrowUpRight size={14} /></a>}
       </div>
     ))}
-    <div className="content-section">
+    <div className="content-section statement-card">
       <h2>A Life Beyond the Classroom</h2>
       {hobbiesClosing.map((p) => <p key={p.slice(0, 24)}>{p}</p>)}
     </div>

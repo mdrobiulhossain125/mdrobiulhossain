@@ -11,7 +11,7 @@ export const Route = createFileRoute("/research-experience")({
 });
 function ResearchExperience() {
   return <SiteShell><h1 className="page-title">Research Experience</h1>
-    <div className="content-section">{experience.map((item) => (
+    <div className="content-section card-list timeline">{experience.map((item) => (
       <article className="entry dated-entry" key={item.title}>
         <span className="entry-date">{item.period}</span>
         <div>

@@ -18,11 +18,12 @@ function OrgLink({ url, label }: { url: string; label: string }) {
 function Leadership() {
   return <SiteShell>
     <h1 className="page-title">Leadership Experience</h1>
-    <div className="content-section">
+    <div className="content-section card-list">
       {leadership.map((org) => (
         <article className="entry" key={org.name}>
-          <span className="entry-title">{org.name}</span>
-          <p className="entry-meta">{[org.period, ...org.roles].filter(Boolean).join(" · ")}</p>
+          <h3 className="card-title">{org.name}</h3>
+          {org.period && <span className="status-pill status-muted">{org.period}</span>}
+          <div className="chip-row">{org.roles.map((r) => <span className="chip" key={r}>{r}</span>)}</div>
           {org.description && <p>{org.description}</p>}
           {org.contributions && (
             <>
@@ -35,7 +36,7 @@ function Leadership() {
         </article>
       ))}
     </div>
-    <div className="content-section">
+    <div className="content-section card-list">
       <h2>Selected Events &amp; Coordination</h2>
       {leadershipEvents.map((e) => (
         <article className="entry dated-entry" key={e.name}>
@@ -48,7 +49,7 @@ function Leadership() {
         </article>
       ))}
     </div>
-    <div className="content-section">
+    <div className="content-section card-list">
       <h2>Volunteering &amp; Community Engagement</h2>
       {volunteering.map((v) => (
         <article className="entry dated-entry" key={v.name}>
@@ -61,7 +62,7 @@ function Leadership() {
         </article>
       ))}
     </div>
-    <div className="content-section">
+    <div className="content-section card-list">
       <h2>Sports</h2>
       <article className="entry">
         <span className="entry-title">{sports.name}</span>
@@ -70,7 +71,7 @@ function Leadership() {
         <p>{sports.detail}</p>
       </article>
     </div>
-    <div className="content-section">
+    <div className="content-section statement-card">
       <h2>What Leadership Means to Me</h2>
       {leadershipStatement.map((p) => <p key={p.slice(0, 24)}>{p}</p>)}
     </div>
