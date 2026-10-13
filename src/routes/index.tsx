@@ -20,7 +20,7 @@ function Home() {
   return <SiteShell network>
     <div className="quote-box">Researching the questions that shape lives, learning and livelihoods.</div>
     <div className="profile-header">
-      <div className="profile-avatar"><img src={portrait.url} alt="Portrait of Md. Robiul Hossain" /></div>
+      <div className="profile-avatar"><img src="/profile_photo.png" alt="Profile Photo" /></div>
       <div className="profile-copy">
         <h1>Hello! I am {person.shortName}.</h1>
         <p>I am an <strong>economics researcher</strong> with experience in development research, education, child development, migration and environmental and resource economics.</p>
