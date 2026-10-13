@@ -30,12 +30,13 @@ function Home() {
         <p>To know more details, you can see my <a className="text-link" href={cvPdf.url} target="_blank" rel="noopener noreferrer">CV here</a>.</p>
       </div>
     </div>
-    <hr className="section-rule" />
-    <div className="interest-copy">
-      <h2 className="section-heading">Research Interests</h2>
-      <p>My research interests lie in <strong>development and behavioural economics</strong> and <strong>environmental and resource economics</strong>. I am particularly interested in:</p>
-      <ul><li>Child development, education and household decision-making</li><li>Labour market outcomes and entrepreneurship</li><li>Fisheries and climate-resilient livelihoods</li></ul>
-      <p><strong>Focus Areas:</strong> Educational inequality, Rohingya refugee communities, child marriage, discipline, migration, economic shocks and the blue economy.</p>
+    <div className="content-section">
+      <h2>Research Interests</h2>
+      <div className="interest-card">
+        <p>My research interests lie in <strong>development and behavioural economics</strong> and <strong>environmental and resource economics</strong>. I am particularly interested in:</p>
+        <ul><li>Child development, education and household decision-making</li><li>Labour market outcomes and entrepreneurship</li><li>Fisheries and climate-resilient livelihoods</li></ul>
+        <p><strong>Focus Areas:</strong> Educational inequality, Rohingya refugee communities, child marriage, discipline, migration, economic shocks and the blue economy.</p>
+      </div>
     </div>
   </SiteShell>;
 }
