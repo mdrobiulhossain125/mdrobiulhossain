@@ -115,6 +115,38 @@
   .project-description p { margin: 0 0 14px; }
   .project-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); font-size: .95rem; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
   .project-link:focus-visible { outline: 2px solid var(--ring); outline-offset: 5px; }
+  /* Refined card system shared by Research, Experience, Leadership, Projects, Interests */
+  .page-title { position: relative; padding-bottom: 14px; }
+  .page-title::after { content: ""; position: absolute; left: 50%; bottom: 0; width: 48px; height: 3px; border-radius: 3px; background: var(--primary); transform: translateX(-50%); }
+  .content-section > h2 { display: flex; align-items: center; gap: 10px; border-bottom: 0; padding-bottom: 0; margin-bottom: 18px; font-size: 1.15rem; }
+  .content-section > h2::before { content: ""; width: 4px; height: 1.1em; border-radius: 2px; background: var(--primary); flex-shrink: 0; }
+  .content-section > h2::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+  .card-list .entry, .interest-card, .statement-card, .project-entry { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px 22px; margin: 0 0 14px; box-shadow: 0 1px 2px oklch(0 0 0 / .03); transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
+  .card-list .entry:last-child { margin-bottom: 0; border-bottom: 1px solid var(--border); }
+  .card-list .entry:hover, .interest-card:hover, .project-entry:hover { border-color: oklch(0.43 0.16 10 / .35); box-shadow: 0 8px 24px -12px oklch(0.43 0.16 10 / .25); transform: translateY(-1px); }
+  .card-list .entry p + p, .interest-card p + p { margin-top: 10px; }
+  .card-list .entry .project-link { margin-top: 12px; }
+  .card-title { font-size: 1.08rem; margin: 0 0 8px; }
+  .status-pill { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--primary); background: oklch(0.43 0.16 10 / .08); border-radius: 999px; padding: 3px 10px; margin-bottom: 10px; }
+  .status-muted { color: var(--muted-foreground); background: var(--muted); }
+  .chip-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
+  .chip { font-size: .85rem; border: 1px solid var(--border); border-radius: 6px; padding: 3px 10px; color: var(--foreground); background: var(--background); }
+  .timeline .dated-entry { grid-template-columns: 130px 1fr; }
+  .timeline .entry-date, .card-list .dated-entry > .entry-date { font-weight: 700; color: var(--primary); font-size: .85rem; padding-right: 14px; border-right: 2px solid oklch(0.43 0.16 10 / .15); }
+  .card-list .plain-list li::marker { color: var(--primary); }
+  .card-list .plain-list li { margin-bottom: 4px; }
+  .chip-row:empty { display: none; }
+  .interest-card { padding: 22px 24px; }
+  .interest-card > h2 { margin-bottom: 12px; }
+  .interest-card > h2::after { display: none; }
+  .interest-card p, .statement-card p { margin: 0 0 10px; }
+  .statement-card { background: var(--muted); border-left: 4px solid var(--primary); }
+  .statement-card > h2::after { display: none; }
+  .lead-copy { font-size: 1.04rem; color: var(--muted-foreground); }
+  .project-entry { padding: 22px; margin-bottom: 22px; }
+  .project-entry:last-child { margin-bottom: 0; padding-bottom: 22px; border-bottom: 1px solid var(--border); }
+  .project-image { border-radius: 8px; }
+  .project-heading .entry-date { font-weight: 700; color: var(--primary); background: oklch(0.43 0.16 10 / .08); border-radius: 999px; padding: 2px 10px; font-size: .8rem; }
   @keyframes rise-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
   @media (max-width: 740px) {
     .site-nav { min-height: 59px; padding: 12px 20px; flex-wrap: wrap; }
@@ -129,6 +161,8 @@
     .dated-entry { display: block; }
     .entry-date { display: block; margin-bottom: 5px; }
     .cv-columns { grid-template-columns: 1fr; gap: 0; }
+    .timeline .entry-date, .card-list .dated-entry > .entry-date { border-right: 0; padding-right: 0; }
+    .card-list .entry, .interest-card, .statement-card, .project-entry { padding: 16px; }
   }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .page-section { animation: none; } }
   @media print { .site-header, .site-footer, .network-layer, .cv-actions { display: none !important; } .page-section { padding: 0; animation: none; } .site-container { width: 100%; } body { font-size: 10pt; } .entry { break-inside: avoid; } }
