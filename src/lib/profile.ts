@@ -58,7 +58,7 @@ export const projects = [
     detail: "Floating agriculture addressing salinity, waterlogging, food security and coastal livelihoods.",
     paragraphs: ["On lands where waterlogging and salinity once limited agricultural opportunities, Harvesting Resilience introduces floating agriculture as a climate-adaptive solution. The project enables coastal farmers to grow food in challenging environments while strengthening household food security and livelihoods.", "More than an agricultural technique, floating farming represents innovation, resilience, and hope. By turning climate-affected land and water into productive spaces, the project helps communities adapt to a changing climate and build a more secure future."],
     url: "https://ecosentinelsbd.org/harvesting-resilience/",
-    image: "/Harvesting Resilience1.jpg",
+    image: "/Harvesting_Resilience1.jpg",
     imageAlt: "A farmer tending crops on a floating agricultural bed.",
   },
   {
