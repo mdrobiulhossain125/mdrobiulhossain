@@ -134,6 +134,8 @@
   .timeline .dated-entry { grid-template-columns: 130px 1fr; }
   .timeline .entry-date, .card-list .dated-entry > .entry-date { font-weight: 700; color: var(--primary); font-size: .85rem; padding-right: 14px; border-right: 2px solid oklch(0.43 0.16 10 / .15); }
   .card-list .plain-list li::marker { color: var(--primary); }
+  .card-list .plain-list li { margin-bottom: 4px; }
+  .chip-row:empty { display: none; }
   .interest-card { padding: 22px 24px; }
   .interest-card > h2 { margin-bottom: 12px; }
   .interest-card > h2::after { display: none; }
