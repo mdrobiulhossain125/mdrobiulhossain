@@ -27,7 +27,7 @@ function Home() {
         <p>I have worked as a <strong>Research Assistant</strong> on studies of Rohingya refugee and host-community populations under the supervision of Md. Johirul Islam, formerly at the <a href="https://bigd.bracu.ac.bd/" target="_blank" rel="noopener noreferrer">BRAC Institute of Governance and Development (BIGD)</a>, BRAC University. My work has included field surveys, data management, statistical analysis and manuscript preparation.</p>
         <p>I studied <strong>Economics at the University of Chittagong</strong>, Bangladesh, in the Bachelor of Social Sciences (Honours) programme. I have also contributed to research on graduate labour markets and fisheries management in the Bay of Bengal region.</p>
         <p>My research manuscripts explore child development, educational inequality, labour market uncertainty and household decision-making. See my <Link className="text-link" to="/research">research</Link> and <Link className="text-link" to="/teaching">teaching</Link> for details.</p>
-        <p>To know more details, you can see my <a className="text-link" href={cvPdf.url} target="_blank" rel="noopener noreferrer">CV here</a>.</p>
+        <p>To know more details, you can see my <a className="text-link" href="/CV_Md_Robiul_Hossain.pdf" target="_blank" rel="noopener noreferrer">CV here</a>.</p>
       </div>
     </div>
     <div className="content-section">
