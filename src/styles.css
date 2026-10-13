@@ -159,6 +159,8 @@
     .dated-entry { display: block; }
     .entry-date { display: block; margin-bottom: 5px; }
     .cv-columns { grid-template-columns: 1fr; gap: 0; }
+    .timeline .entry-date, .card-list .dated-entry > .entry-date { border-right: 0; padding-right: 0; }
+    .card-list .entry, .interest-card, .statement-card, .project-entry { padding: 16px; }
   }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .page-section { animation: none; } }
   @media print { .site-header, .site-footer, .network-layer, .cv-actions { display: none !important; } .page-section { padding: 0; animation: none; } .site-container { width: 100%; } body { font-size: 10pt; } .entry { break-inside: avoid; } }
