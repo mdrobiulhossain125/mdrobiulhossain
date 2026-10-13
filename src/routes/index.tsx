@@ -1,8 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteShell } from "@/components/site-shell";
 import { person } from "@/lib/profile";
-import portrait from "@/assets/robiul-portrait.png.asset.json";
-import cvPdf from "@/assets/CV_Md_Robiul_Hossain.pdf.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
@@ -20,7 +18,6 @@ function Home() {
   return <SiteShell network>
     <div className="quote-box">Researching the questions that shape lives, learning and livelihoods.</div>
     <div className="profile-header">
-      <div className="profile-avatar"><img src="/profile_photo.png" alt="Profile Photo" /></div>
       <div className="profile-copy">
         <h1>Hello! I am {person.shortName}.</h1>
         <p>I am an <strong>economics researcher</strong> with experience in development research, education, child development, migration and environmental and resource economics.</p>
