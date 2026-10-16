@@ -8,3 +8,5 @@
 - [x] Create a Leadership Experience page with the supplied organizations, events, volunteering and sports content.
 - [x] Create a Hobbies & Interests page with the supplied content and YouTube link.
 - [x] Add both pages to the navigation and verify desktop and mobile rendering.
+- [x] Home page card redesign and CV reference links.
+- [ ] Blog list page and full blog post page with first Bangla QR post.
