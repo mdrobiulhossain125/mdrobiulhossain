@@ -141,7 +141,8 @@
   .interest-card > h2 { margin-bottom: 12px; }
   .interest-card > h2::after { display: none; }
   .interest-card p, .statement-card p { margin: 0 0 10px; }
-  .interest-card ul { padding-left: 22px; margin: 0 0 14px; }
+  .interest-card ul, .blog-body ul { list-style: disc; padding-left: 22px; margin: 0 0 14px; }
+  .blog-body ol { list-style: decimal; }
   .interest-card ul li { margin-bottom: 6px; }
   .interest-card ul li::marker { color: var(--primary); }
   .statement-card { background: var(--muted); border-left: 4px solid var(--primary); }
