@@ -304,6 +304,4 @@ Bangladesh should therefore measure the success of Bangla QR not simply by how m
 3. World Bank. *Digital Finance Country Profile: Bangladesh.* [Country indicators](https://digitalfinance.worldbank.org/country/bangladesh).
 4. Government of India, Press Information Bureau. *Coordinated Efforts of Government, RBI and NPCI Accelerate Growth in Digital Payments.* 16 March 2026. [Official release](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2240723&lang=1&reg=1).
 5. Bank of Thailand. *PromptPay and Cross-Border QR Payments.* 14 May 2024. [Official article](https://www.bot.or.th/th/research-and-publications/articles-and-publications/articles/article-2024may14.html).
-6. Central Bank of Brazil. *Pix Statistics.* [Official statistics](https://www.bcb.gov.br/estabilidadefinanceira/pix-em-numeros-estatisticas).
-
-*Data note: International figures refer to the specific dates or reporting periods stated in the article. Bangladesh's FY2024–25 Bangla QR figures cover NPSB-settled transactions and should not be treated as a comprehensive measure of all QR-payment activity. Verify the latest Bangladesh Bank circulars and statistics before publication.*
+6. Central Bank of Brazil. *Pix Statistics.* [Official statistics](https://www.bcb.gov.br/estabilidadefinanceira/pix-em-numeros-estatisticas).
