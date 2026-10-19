@@ -52,6 +52,36 @@ export const inPreparation = [
   { title: "Parental Migration, Displacement and Children's Educational Aspirations among Rohingya Refugee Families", authors: "Hossain, M. R. (2026)" },
 ];
 
+export type ConferenceItem = {
+  status: string;
+  statusMuted?: boolean;
+  title: string;
+  detail: string;
+  citation: string;
+};
+
+export const conferenceContributions: ConferenceItem[] = [
+  {
+    status: "Accepted · 2026",
+    title: "Perceived Labour Market Uncertainty and Career Anxiety in the Age of Artificial Intelligence: Evidence from University Students in Bangladesh",
+    detail: "Paper accepted for presentation at the 2nd International Student Research Conference (ISRC) 2026, organized by the Dhaka University Research Society (DURS).",
+    citation: "Hossain, M. R., & Chowdhury, R. S. Paper accepted at the 2nd International Student Research Conference (ISRC) 2026, organized by the Dhaka University Research Society (DURS).",
+  },
+  {
+    status: "Presented · 2025",
+    title: "Unintended Spillovers: School Bans, Home Punishment, and Child Emotional Development",
+    detail: "Islam, M. J., Iqra, A. N., & Hossain, M. R. Presented online at the Fifth Annual International Conference: A New Global Order, Yet Again, Karachi, Pakistan, 14 November 2025.",
+    citation: "“Unintended Spillovers: School Bans, Home Punishment, and Child Emotional Development.” Paper presented online at the Fifth Annual International Conference: A New Global Order, Yet Again, Karachi, 14 November 2025.",
+  },
+  {
+    status: "Forthcoming · 2026",
+    statusMuted: true,
+    title: "Gender Heterogeneity in the Impact of Violent Discipline on Foundational Reading Skills",
+    detail: "Abstract accepted for online presentation at the 4th International C.I.T.E.D Conference, Universitas Brawijaya, Indonesia, 27–28 October 2026. Forthcoming presentation.",
+    citation: "“Gender Heterogeneity in the Impact of Violent Discipline on Foundational Reading Skills.” Abstract accepted for online presentation at the 4th International C.I.T.E.D Conference, Indonesia, 27–28 October 2026. Forthcoming presentation.",
+  },
+];
+
 export const projects = [
   {
     year: "2024", name: "Harvesting Resilience",

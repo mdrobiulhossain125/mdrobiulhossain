@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteShell } from "@/components/site-shell";
-import { inPreparation, underReview } from "@/lib/profile";
+import { conferenceContributions, inPreparation, underReview } from "@/lib/profile";
 
 export const Route = createFileRoute("/research")({
   head: () => ({ meta: [
