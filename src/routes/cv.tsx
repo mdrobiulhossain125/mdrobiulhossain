@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Printer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiteShell } from "@/components/site-shell";
-import { experience, inPreparation, person, projects, underReview } from "@/lib/profile";
+import { conferenceContributions, experience, inPreparation, person, projects, underReview } from "@/lib/profile";
 
 export const Route = createFileRoute("/cv")({
   head: () => ({ meta: [
