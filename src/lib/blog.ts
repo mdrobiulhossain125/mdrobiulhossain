@@ -1,4 +1,5 @@
 import banglaQr from "@/content/blog/bangla-qr.md?raw";
+import taxPolicyAi from "@/content/blog/tax-policy-ai-future-of-work.md?raw";
 
 export type BlogPost = { slug: string; title: string; subtitle: string; date: string; author: string; excerpt: string; body: string };
 
@@ -6,6 +7,15 @@ export const blogAuthor = "MD ROBIUL HOSSAIN";
 
 // Newest first; add each new post at the top.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "tax-policies-ai-future-of-work",
+    title: "Are Tax Policies Making AI More Attractive Than Human Workers?",
+    subtitle: "How tax incentives shape automation, employment, and economic inequality.",
+    date: "23 October 2026",
+    author: blogAuthor,
+    excerpt: "Artificial intelligence is changing the way businesses operate. From customer service and data analysis to manufacturing and administrative work, companies are increasingly exploring whether tasks traditionally performed by people can be completed by software, algorithms, and automated systems.",
+    body: taxPolicyAi,
+  },
   {
     slug: "bangla-qr-future-of-digital-payments",
     title: "Bangla QR and the Future of Digital Payments in Bangladesh: Opportunities, Challenges, and Economic Impact",
