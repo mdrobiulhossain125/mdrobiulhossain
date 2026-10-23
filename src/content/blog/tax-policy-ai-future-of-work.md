@@ -1,7 +1,3 @@
-# Are Tax Policies Making AI More Attractive Than Human Workers?
-
-*How tax incentives shape automation, employment, and economic inequality*
-
 Artificial intelligence is changing the way businesses operate. From customer service and data analysis to manufacturing and administrative work, companies are increasingly exploring whether tasks traditionally performed by people can be completed by software, algorithms, and automated systems.
 
 This shift is often explained as the natural consequence of technological progress. AI can process information quickly, operate continuously, and perform certain tasks at a lower cost. But there is another part of the story that deserves greater attention: **the tax system can influence whether companies find it more financially attractive to invest in technology or hire human workers.**
