@@ -4,6 +4,9 @@ export type Award = {
   project: string;
   category: string;
   organization: string;
+  country: string;
+  event: string;
+  eventDates: string;
   year: string;
   detail: string;
 };
@@ -11,10 +14,13 @@ export type Award = {
 export const awards: Award[] = [
   {
     title: "Youth4Climate 2026 Awardee",
-    recognition: "International Youth Climate Innovation Award",
+    recognition: "Youth4Climate Awardee — 2026",
     project: "Harvesting Resilience",
     category: "Food and Agriculture",
     organization: "Youth4Climate",
+    country: "Italy",
+    event: "Youth4Climate: Connecting Solutions",
+    eventDates: "19–23 October 2026",
     year: "2026",
     detail: "Selected as a 2026 Youth4Climate awardee under the Food and Agriculture theme for Harvesting Resilience. The award provides financial and technical support to further develop the solution, strengthen climate resilience, and expand its potential impact on communities in Bangladesh.",
   },
