@@ -10,3 +10,4 @@
 - [x] Add both pages to the navigation and verify desktop and mobile rendering.
 - [x] Home page card redesign and CV reference links.
 - [x] Blog list page and full blog post page with first Bangla QR post.
+- [x] Add an Awards & Recognition page after Research in the navigation with the Youth4Climate 2026 award.

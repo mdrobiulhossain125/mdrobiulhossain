@@ -147,6 +147,9 @@
   .interest-card ul li::marker { color: var(--primary); }
   .statement-card { background: var(--muted); border-left: 4px solid var(--primary); }
   .statement-card > h2::after { display: none; }
+  .award-entry .entry-title + .entry-meta { margin-bottom: 10px; }
+  .award-title { display: flex; align-items: center; gap: 10px; }
+  .award-title svg { color: var(--primary); flex-shrink: 0; }
   .lead-copy { font-size: 1.04rem; color: var(--muted-foreground); }
   .project-entry { padding: 22px; margin-bottom: 22px; }
   .project-entry:last-child { margin-bottom: 0; padding-bottom: 22px; border-bottom: 1px solid var(--border); }
