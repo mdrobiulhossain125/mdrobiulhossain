@@ -1,3 +1,25 @@
+export type Award = {
+  title: string;
+  recognition: string;
+  project: string;
+  category: string;
+  organization: string;
+  year: string;
+  detail: string;
+};
+
+export const awards: Award[] = [
+  {
+    title: "Youth4Climate 2026 Awardee",
+    recognition: "International Youth Climate Innovation Award",
+    project: "Harvesting Resilience",
+    category: "Food and Agriculture",
+    organization: "Youth4Climate",
+    year: "2026",
+    detail: "Selected as a 2026 Youth4Climate awardee under the Food and Agriculture theme for Harvesting Resilience. The award provides financial and technical support to further develop the solution, strengthen climate resilience, and expand its potential impact on communities in Bangladesh.",
+  },
+];
+
 export const person = {
   name: "Md. Robiul Hossain",
   shortName: "Robiul",
