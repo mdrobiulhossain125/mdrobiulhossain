@@ -7,7 +7,7 @@ import awardImage from "@/assets/youth4climate-awardees.jpg.asset.json";
 export const Route = createFileRoute("/awards")({
   head: () => ({ meta: [
     { title: "Awards & Recognition | Md. Robiul Hossain" }, { name: "description", content: "Awards and recognition of Md. Robiul Hossain, including the Youth4Climate 2026 award for Harvesting Resilience." },
-    { property: "og:title", content: "Awards & Recognition | Md. Robiul Hossain" }, { property: "og:description", content: "Youth4Climate 2026 Awardee — International Youth Climate Innovation Award for Harvesting Resilience." },
+    { property: "og:title", content: "Awards & Recognition | Md. Robiul Hossain" }, { property: "og:description", content: "Youth4Climate Awardee 2026 — Harvesting Resilience, Food and Agriculture theme." },
     { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" },
   ] }), component: Awards,
 });
@@ -22,10 +22,15 @@ function Awards() {
           <h3 className="card-title award-title"><Trophy size={20} aria-hidden="true" /> {award.title}</h3>
           <img className="award-image" src={awardImage.url} alt="Youth4Climate 2026 awardee projects in Uganda, Bangladesh and Kenya, including Eco Sentinels Bangladesh's Harvesting Resilience" loading="lazy" />
           <p className="entry-meta"><strong>{award.recognition}</strong></p>
-          <p><strong>Project:</strong> {award.project}</p>
-          <p><strong>Category:</strong> {award.category}</p>
-          <p><strong>Awarding Organization:</strong> {award.organization}</p>
-          <p><strong>Year:</strong> {award.year}</p>
+          <dl className="award-facts">
+            <div><dt>Project</dt><dd>{award.project}</dd></div>
+            <div><dt>Category</dt><dd>{award.category}</dd></div>
+            <div><dt>Awarding Organization</dt><dd>{award.organization}</dd></div>
+            <div><dt>Country</dt><dd>{award.country}</dd></div>
+            <div><dt>Award Event</dt><dd>{award.event}</dd></div>
+            <div><dt>Event Dates</dt><dd>{award.eventDates}</dd></div>
+            <div><dt>Award Year</dt><dd>{award.year}</dd></div>
+          </dl>
           <p>{award.detail}</p>
         </article>
       </div>
