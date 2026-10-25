@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Trophy } from "lucide-react";
 import { SiteShell } from "@/components/site-shell";
 import { awards } from "@/lib/profile";
+import awardImage from "@/assets/youth4climate-awardees.jpg.asset.json";
 
 export const Route = createFileRoute("/awards")({
   head: () => ({ meta: [
@@ -19,6 +20,7 @@ function Awards() {
         <article className="entry award-entry">
           <span className="status-pill">Awardee · {award.year}</span>
           <h3 className="card-title award-title"><Trophy size={20} aria-hidden="true" /> {award.title}</h3>
+          <img className="award-image" src={awardImage.url} alt="Youth4Climate 2026 awardee projects in Uganda, Bangladesh and Kenya, including Eco Sentinels Bangladesh's Harvesting Resilience" loading="lazy" />
           <p className="entry-meta"><strong>{award.recognition}</strong></p>
           <p><strong>Project:</strong> {award.project}</p>
           <p><strong>Category:</strong> {award.category}</p>
