@@ -150,6 +150,7 @@
   .award-entry .entry-title + .entry-meta { margin-bottom: 10px; }
   .award-title { display: flex; align-items: center; gap: 10px; }
   .award-title svg { color: var(--primary); flex-shrink: 0; }
+  .award-image { display: block; width: 100%; max-width: 460px; height: auto; margin: 4px auto 16px; border-radius: 10px; border: 1px solid var(--border); background: var(--muted); }
   .lead-copy { font-size: 1.04rem; color: var(--muted-foreground); }
   .project-entry { padding: 22px; margin-bottom: 22px; }
   .project-entry:last-child { margin-bottom: 0; padding-bottom: 22px; border-bottom: 1px solid var(--border); }
