@@ -12,8 +12,10 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AwardsRouteImport } from './routes/awards'
 import { Route as CvRouteImport } from './routes/cv'
+import { Route as EducationRouteImport } from './routes/education'
 import { Route as InterestsRouteImport } from './routes/interests'
 import { Route as LeadershipRouteImport } from './routes/leadership'
+import { Route as LearningRouteImport } from './routes/learning'
 import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as ResearchRouteImport } from './routes/research'
 import { Route as ResearchExperienceRouteImport } from './routes/research-experience'
@@ -36,6 +38,11 @@ const CvRoute = CvRouteImport.update({
   path: '/cv',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EducationRoute = EducationRouteImport.update({
+  id: '/education',
+  path: '/education',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const InterestsRoute = InterestsRouteImport.update({
   id: '/interests',
   path: '/interests',
@@ -44,6 +51,11 @@ const InterestsRoute = InterestsRouteImport.update({
 const LeadershipRoute = LeadershipRouteImport.update({
   id: '/leadership',
   path: '/leadership',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LearningRoute = LearningRouteImport.update({
+  id: '/learning',
+  path: '/learning',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProjectsRoute = ProjectsRouteImport.update({
@@ -81,8 +93,10 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/awards': typeof AwardsRoute
   '/cv': typeof CvRoute
+  '/education': typeof EducationRoute
   '/interests': typeof InterestsRoute
   '/leadership': typeof LeadershipRoute
+  '/learning': typeof LearningRoute
   '/projects': typeof ProjectsRoute
   '/research': typeof ResearchRoute
   '/research-experience': typeof ResearchExperienceRoute
@@ -94,8 +108,10 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/awards': typeof AwardsRoute
   '/cv': typeof CvRoute
+  '/education': typeof EducationRoute
   '/interests': typeof InterestsRoute
   '/leadership': typeof LeadershipRoute
+  '/learning': typeof LearningRoute
   '/projects': typeof ProjectsRoute
   '/research': typeof ResearchRoute
   '/research-experience': typeof ResearchExperienceRoute
@@ -108,8 +124,10 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/awards': typeof AwardsRoute
   '/cv': typeof CvRoute
+  '/education': typeof EducationRoute
   '/interests': typeof InterestsRoute
   '/leadership': typeof LeadershipRoute
+  '/learning': typeof LearningRoute
   '/projects': typeof ProjectsRoute
   '/research': typeof ResearchRoute
   '/research-experience': typeof ResearchExperienceRoute
@@ -123,8 +141,10 @@ export interface FileRouteTypes {
     | '/'
     | '/awards'
     | '/cv'
+    | '/education'
     | '/interests'
     | '/leadership'
+    | '/learning'
     | '/projects'
     | '/research'
     | '/research-experience'
@@ -136,8 +156,10 @@ export interface FileRouteTypes {
     | '/'
     | '/awards'
     | '/cv'
+    | '/education'
     | '/interests'
     | '/leadership'
+    | '/learning'
     | '/projects'
     | '/research'
     | '/research-experience'
@@ -149,8 +171,10 @@ export interface FileRouteTypes {
     | '/'
     | '/awards'
     | '/cv'
+    | '/education'
     | '/interests'
     | '/leadership'
+    | '/learning'
     | '/projects'
     | '/research'
     | '/research-experience'
@@ -163,8 +187,10 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AwardsRoute: typeof AwardsRoute
   CvRoute: typeof CvRoute
+  EducationRoute: typeof EducationRoute
   InterestsRoute: typeof InterestsRoute
   LeadershipRoute: typeof LeadershipRoute
+  LearningRoute: typeof LearningRoute
   ProjectsRoute: typeof ProjectsRoute
   ResearchRoute: typeof ResearchRoute
   ResearchExperienceRoute: typeof ResearchExperienceRoute
@@ -196,6 +222,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CvRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/education': {
+      id: '/education'
+      path: '/education'
+      fullPath: '/education'
+      preLoaderRoute: typeof EducationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/interests': {
       id: '/interests'
       path: '/interests'
@@ -208,6 +241,13 @@ declare module '@tanstack/react-router' {
       path: '/leadership'
       fullPath: '/leadership'
       preLoaderRoute: typeof LeadershipRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learning': {
+      id: '/learning'
+      path: '/learning'
+      fullPath: '/learning'
+      preLoaderRoute: typeof LearningRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/projects': {
@@ -259,8 +299,10 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AwardsRoute: AwardsRoute,
   CvRoute: CvRoute,
+  EducationRoute: EducationRoute,
   InterestsRoute: InterestsRoute,
   LeadershipRoute: LeadershipRoute,
+  LearningRoute: LearningRoute,
   ProjectsRoute: ProjectsRoute,
   ResearchRoute: ResearchRoute,
   ResearchExperienceRoute: ResearchExperienceRoute,
