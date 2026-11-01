@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Printer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiteShell } from "@/components/site-shell";
@@ -16,7 +16,7 @@ function CV() {
     <div className="cv-actions"><Button variant="outline" onClick={() => window.print()}><Printer /> Print / Save PDF</Button></div>
     <h1 className="page-title">{person.name}</h1>
     <div className="content-section"><h2>Contact Information</h2><p>{person.location} · {person.phone}</p><div className="contact-list"><a href={`mailto:${person.email}`}>{person.email}</a><a href={person.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a><a href={person.researchGate} target="_blank" rel="noopener noreferrer">ResearchGate</a></div></div>
-    <div className="content-section"><h2>Education</h2><article className="entry dated-entry"><span className="entry-date">2026</span><div><span className="entry-title">Bachelor of Social Sciences (Honours) in Economics</span><p>University of Chittagong, Bangladesh · Four-year undergraduate programme</p><p><strong>Selected coursework:</strong> Microeconomic Theory I–II; Macroeconomic Theory I–II; Mathematics for Economists; Statistics for Economists I–II; Econometrics.</p></div></article></div>
+    <div className="content-section"><h2>Education</h2><article className="entry dated-entry"><span className="entry-date">2026</span><div><span className="entry-title">Bachelor of Social Sciences (Honours) in Economics</span><p>University of Chittagong, Bangladesh · Four-year undergraduate programme</p><p><strong>Selected coursework:</strong> Microeconomic Theory I–II; Macroeconomic Theory I–II; Mathematics for Economists; Statistics for Economists I–II; Econometrics.</p><p><Link className="text-link" to="/education">View the full course list and education history</Link></p></div></article></div>
     <div className="content-section"><h2>Research Interests</h2><p>Development and behavioural economics, child development, education, household decision-making, labour market outcomes, entrepreneurship, fisheries and climate-resilient livelihoods.</p></div>
     <div className="content-section"><h2>Research Experience</h2>{experience.map((item) => <article className="entry dated-entry" key={item.title}><span className="entry-date">{item.period}</span><div><span className="entry-title">{item.title}</span><p className="entry-meta">{item.affiliation}</p><p>{item.detail}</p></div></article>)}</div>
     <div className="content-section"><h2>Manuscripts under review</h2>{underReview.map((item) => <article className="entry" key={item.title}><span className="entry-title">{item.title}</span><p>{item.authors}. <em>{item.venue}.</em></p></article>)}</div>

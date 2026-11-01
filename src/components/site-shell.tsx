@@ -6,6 +6,8 @@ import { person } from "@/lib/profile";
 
 const links = [
   { to: "/", label: "Home" },
+  { to: "/education", label: "Education" },
+  { to: "/learning", label: "Learning" },
   { to: "/research", label: "Research" },
   { to: "/awards", label: "Awards" },
   { to: "/research-experience", label: "Experience" },

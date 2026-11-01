@@ -179,6 +179,13 @@
   .blog-body th, .blog-body td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; }
   .blog-body th { background: var(--muted); }
   @media (max-width: 740px) { .blog-article { padding: 20px 16px; } .blog-header h1 { font-size: 1.35rem; } }
+  /* Education page: compact coursework grid */
+  .course-heading { font-size: 1rem; margin: 18px 0 12px; }
+  .course-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 30px; }
+  .course-year h3 { font-size: .95rem; margin: 0 0 8px; }
+  .course-year .chip-row { margin: 0; }
+  .chip-sm { font-size: .78rem; padding: 2px 9px; }
+  @media (max-width: 740px) { .course-grid { grid-template-columns: 1fr; } }
   @keyframes rise-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
   @media (max-width: 740px) {
     .site-nav { min-height: 59px; padding: 12px 20px; flex-wrap: wrap; }
