@@ -348,3 +348,115 @@ export const hobbiesClosing = [
   "Research and academics shape my intellectual journey, while sports, cycling, and travelling keep me connected to people, places, and experiences.",
   "I believe these experiences complement my academic life by helping me remain curious, active, adaptable, and open to new perspectives.",
 ];
+
+export type EducationItem = {
+  title: string;
+  institution: string;
+  location: string;
+  year: string;
+  detail?: string;
+};
+
+export const education: EducationItem[] = [
+  {
+    title: "Bachelor of Social Science (BSS) Honours in Economics",
+    institution: "University of Chittagong (CU)",
+    location: "Chattogram-4331, Bangladesh",
+    year: "2026",
+    detail: "Four-Year Programme",
+  },
+  {
+    title: "Higher Secondary Certificate (HSC) — Business Studies",
+    institution: "Chittagong University College",
+    location: "Chattogram-4331, Bangladesh",
+    year: "2020",
+  },
+  {
+    title: "Secondary School Certificate (SSC) — Business Studies",
+    institution: "Chittagong University Laboratory School and College",
+    location: "Chittagong-4331, Bangladesh",
+    year: "2018",
+  },
+];
+
+export const coursework: { year: string; courses: string[] }[] = [
+  {
+    year: "First Year",
+    courses: [
+      "101 – Principles of Microeconomics",
+      "102 – Principles of Macroeconomics",
+      "103 – Mathematics for Economists",
+      "104 – Statistics for Economists",
+      "105 – Economic History & Development of Bangladesh",
+      "106 – Fundamentals of Accounting & Business Organization",
+      "107 – Introduction to Social Sciences",
+      "001 – Functional English (Non-credit)",
+    ],
+  },
+  {
+    year: "Second Year",
+    courses: [
+      "201 – Intermediate Microeconomics",
+      "202 – Intermediate Macroeconomics",
+      "203 – Research Methodology",
+      "204 – Advanced Statistics",
+      "205 – Agricultural Economics",
+      "206 – Banking and Finance",
+      "207 – Computer Applications for Economists",
+    ],
+  },
+  {
+    year: "Third Year",
+    courses: [
+      "301 – Advanced Microeconomics",
+      "302 – Advanced Macroeconomics",
+      "303 – Mathematical Economics",
+      "304 – Econometrics",
+      "305 – Economic Growth, Development & Planning",
+      "307 – Industrial Economics",
+      "308 – Health Economics",
+    ],
+  },
+  {
+    year: "Fourth Year",
+    courses: [
+      "401 – Labour Economics",
+      "402 – Public Finance",
+      "403 – International Trade",
+      "404 – Financial Investment & Security Analysis",
+      "405 – Resource and Environmental Economics",
+      "406 – History of Economic Thought",
+      "407 – Political Economy of Underdevelopment",
+    ],
+  },
+];
+
+export type LearningItem = {
+  title: string;
+  speaker: string;
+  organization: string;
+  date: string;
+  type: string;
+  overview: string;
+  areas: string[];
+  recording?: string;
+};
+
+export const learningDevelopment: LearningItem[] = [
+  {
+    title: "Claude Code for R Users: Getting Started with Agentic Coding",
+    speaker: "Elle O’Brien",
+    organization: "Michigan Institute for Data & AI in Society (MIDAS)",
+    date: "September 17, 2026",
+    type: "Online Tutorial / Professional Development",
+    overview:
+      "Explored how agentic AI coding tools can support research workflows by reading project files, executing code, debugging errors, improving reproducibility, and connecting data analysis with academic manuscript preparation.",
+    areas: [
+      "AI-assisted R programming and code debugging",
+      "Reproducible research workflows",
+      "Applications of coding agents in data analysis",
+      "Integrating analytical outputs with academic writing",
+    ],
+    recording: "https://youtu.be/yYnscewnfd8",
+  },
+];
