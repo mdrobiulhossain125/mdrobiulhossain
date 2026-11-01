@@ -59,7 +59,7 @@
   .site-shell { min-height: 100vh; display: flex; flex-direction: column; }
   .site-container { width: min(100% - 40px, 900px); margin-inline: auto; }
   .site-header { position: sticky; top: 0; z-index: 20; background: var(--background); border-bottom: 3px solid var(--primary); box-shadow: 0 2px 5px oklch(0 0 0 / .05); }
-  .site-nav { max-width: 900px; margin: auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; gap: 24px; min-height: 62px; }
+  .site-nav { max-width: 1080px; margin: auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; gap: 24px; min-height: 62px; }
   .site-brand { font: 700 1.2rem/1.4 var(--font-display); color: var(--primary); white-space: nowrap; }
   .site-links { display: flex; align-items: center; gap: 7px; }
   .site-links a { color: var(--muted-foreground); padding: 5px 7px; font-size: .93rem; white-space: nowrap; border-bottom: 2px solid transparent; }
