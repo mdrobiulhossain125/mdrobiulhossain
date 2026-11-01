@@ -15,7 +15,9 @@ export const Route = createFileRoute("/education")({
 });
 
 function Education() {
-  const [bss, hsc, ssc] = education;
+  const bss = education[0]!;
+  const hsc = education[1]!;
+  const ssc = education[2]!;
   return <SiteShell>
     <h1 className="page-title">Education</h1>
     <div className="content-section card-list">
